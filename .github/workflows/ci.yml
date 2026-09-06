@@ -25,9 +25,5 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
 
-      - name: Grant Execute Permission to Gradle Wrapper
-        run: chmod +x ./gradlew
-
-
       - name: Build and Test with Gradle
-        run: ./gradlew build
+        run: gradle build
